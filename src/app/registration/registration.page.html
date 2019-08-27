@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title>Registration</ion-title>
+    <ion-buttons slot="start">
+        
+        <ion-back-button defaultHref="login"></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content center text-center forceOverscroll="false">
+    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+        <ion-card>
+            <ion-card-header>
+                <ion-card-subtitle>plaese fill up the following details</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+        <ion-item style="padding-top: 5px;">
+            <ion-label position="floating">Full Name <ion-text color="danger">*</ion-text></ion-label>
+            <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+          </ion-item>
+        
+            <ion-item style="padding-top: 5px;">
+                <ion-label position="floating">Phone No. <ion-text color="danger">*</ion-text></ion-label>
+                <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+              </ion-item>
+              <ion-item style="padding-top: 5px;">
+            <ion-label position="floating">Email Id <ion-text color="danger">*</ion-text></ion-label>
+            <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+          </ion-item>
+          <ion-item style="padding-top: 5px;">
+              <ion-label position="floating">Password <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+            </ion-item>
+            <ion-item style="padding-top: 5px;">
+                <ion-label position="floating">Confirm Password <ion-text color="danger">*</ion-text></ion-label>
+                <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+              </ion-item>
+              <ion-item style="padding-top: 5px;">
+                  <ion-label position="floating">Pin (4 digit) <ion-text color="danger">*</ion-text></ion-label>
+                  <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+                </ion-item>
+          
+          <ion-button (click)="gotoSave()" color="success" expand="block" style="padding-top: 10px">Save</ion-button>
+          <ion-button (click)="gotoCancel()" color="danger" expand="block" style="padding-top: 10px">Cancel</ion-button>
+     
+        </ion-card-content>
+        </ion-card>
+      </ion-list>
+</ion-content>

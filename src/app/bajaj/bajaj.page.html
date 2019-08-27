@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Bajaj</ion-title>
+    <ion-buttons slot="start">
+        <ion-back-button defaultHref="dashboard"></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content center text-center forceOverscroll="false">
+    <ion-list >
+        <ion-card>
+            <ion-card-header>
+                <ion-card-title style="font-size: 14px">
+                 
+                    <img src="assets/icon/bajaj_1.png">
+                    Health Ensure Individual
+                </ion-card-title>
+                <ion-card-subtitle style="padding-top: 20px">Basic Details :</ion-card-subtitle>
+                
+            </ion-card-header>
+            <ion-card-content>
+        <ion-item style="padding-top: 5px;">
+            <ion-label position="floating">Policy Type <ion-text color="danger">*</ion-text></ion-label>
+            <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+          </ion-item>
+        
+            <ion-item style="padding-top: 5px;">
+                <ion-label position="floating">Location<ion-text color="danger">*</ion-text></ion-label>
+                <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+              </ion-item>
+              <ion-item style="padding-top: 5px;">
+            <ion-label position="floating">Zone <ion-text color="danger">*</ion-text></ion-label>
+            <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+          </ion-item>
+          <ion-item style="padding-top: 5px;">
+              <ion-label position="floating">Age of Primary Member <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+            </ion-item>
+            <ion-item style="padding-top: 5px;">
+                <ion-label position="floating">Sum Insured of Primary Member <ion-text color="danger">*</ion-text></ion-label>
+                <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+              </ion-item>
+              <ion-item style="padding-top: 5px;">
+                  <ion-label position="floating">Age of Second Member <ion-text color="danger">*</ion-text></ion-label>
+                  <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+                </ion-item>
+                <ion-item style="padding-top: 5px;">
+                    <ion-label position="floating">Sum Insured of Second Member<ion-text color="danger">*</ion-text></ion-label>
+                    <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+                  </ion-item>
+                  <ion-item style="padding-top: 5px;">
+                      <ion-label position="floating">Age of Third Member<ion-text color="danger">*</ion-text></ion-label>
+                      <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+                    </ion-item>
+                    <ion-item style="padding-top: 5px;">
+                        <ion-label position="floating">Sum Insured of Third Member<ion-text color="danger">*</ion-text></ion-label>
+                        <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+                      </ion-item>
+                      <ion-item style="padding-top: 5px;">
+                          <ion-label position="floating">Age of Fourth Member<ion-text color="danger">*</ion-text></ion-label>
+                          <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+                        </ion-item>
+                        <ion-item style="padding-top: 5px;">
+                            <ion-label position="floating">Sum Insured of Fourth Member<ion-text color="danger">*</ion-text></ion-label>
+                            <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+                          </ion-item>
+
+          <ion-button (click)="gotoSave()" color="success" expand="block" style="padding-top: 10px">Calculate</ion-button>
+          <!-- <ion-button (click)="gotoCancel()" color="danger" expand="block" style="padding-top: 10px">Cancel</ion-button> -->
+     
+        </ion-card-content>
+        </ion-card>
+      </ion-list>
+</ion-content>

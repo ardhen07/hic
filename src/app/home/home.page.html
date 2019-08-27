@@ -1,14 +1,45 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
-</ion-content>
+    <ion-toolbar>
+        <ion-title style="font-size: 15px">Helath Insurance Calculator</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content center text-center forceOverscroll="false" >
+  
+    <ion-slides center text-center pager="true" style="height: 100%">
+        <ion-toolbar>
+            
+        </ion-toolbar>
+        <ion-slide  style="align-items: center">
+            <ion-card>
+                <img src="assets/welcome/1.jpg">
+                <ion-card-content>
+                  <ion-card-title>
+                    Nine Inch Nails Live
+                    </ion-card-title>
+                  <p>
+                    The most popular industrial group ever, and largely
+                    responsible for bringing the music to a mass audience.
+                  </p>
+                </ion-card-content>
+              </ion-card>
+            
+          </ion-slide>
+          <ion-slide>
+              <img src="assets/welcome/2.jpg">
+          </ion-slide>
+          <ion-slide> 
+             <img src="assets/welcome/3.png">
+                
+          </ion-slide>
+    </ion-slides>
+  </ion-content>
+  <ion-footer no-shadow>
+      <ion-toolbar position="bottom">
+          <ion-buttons end>
+              
+              <ion-button (click)="gotoSignin()" color="primary" >Skip</ion-button>
+              
+            </ion-buttons>
+      </ion-toolbar>
+    </ion-footer>

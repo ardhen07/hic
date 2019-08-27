@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title>Dashboard</ion-title>
+    <ion-buttons slot="start">
+        <ion-back-button defaultHref="login"></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content center text-center forceOverscroll="false">
+    <ion-list>
+        <ion-list-header>
+          Select a Brand
+        </ion-list-header>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="assets/cmp_logo/1.png">
+            
+          </ion-avatar>
+          <ion-label>
+            <h2>Bajaj</h2>
+            <!-- <h3>I'm a big deal</h3>
+            <p>Listen, I've had a pretty messed up day...</p> -->
+          </ion-label>
+          <ion-buttons slot="end" style="float: right">
+              <ion-button (click)="gotoBajaj()" color="primary" ><ion-icon name="arrow-forward"></ion-icon></ion-button> 
+          </ion-buttons>
+        </ion-item>
+    
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="assets/cmp_logo/2.png">
+          </ion-avatar>
+          <ion-label>
+            <h2>Apollo</h2>
+            <!-- <h3>Look, kid...</h3>
+            <p>I've got enough on my plate as it is, and I...</p> -->
+          </ion-label>
+          <ion-buttons slot="end" style="float: right">
+              <ion-button (click)="gotoSignin()" color="primary" ><ion-icon name="arrow-forward"></ion-icon></ion-button> 
+          </ion-buttons>
+        </ion-item>
+    
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="assets/cmp_logo/3.png">
+          </ion-avatar>
+          <ion-label>
+            <h2>HDFC</h2>
+            <!-- <h3>I can handle myself</h3>
+            <p>You will remove these restraints and leave...</p> -->
+          </ion-label>
+          <ion-buttons slot="end" style="float: right">
+              <ion-button (click)="gotoSignin()" color="primary" ><ion-icon name="arrow-forward"></ion-icon></ion-button> 
+          </ion-buttons>
+        </ion-item>
+    
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="assets/cmp_logo/4.jpg">
+          </ion-avatar>
+          <ion-label>
+            <h2>Star</h2>
+            <!-- <h3>Your thoughts betray you</h3>
+            <p>I feel the good in you, the conflict...</p> -->
+          </ion-label>
+          <ion-buttons slot="end" style="float: right">
+              <ion-button (click)="gotoSignin()" color="primary" ><ion-icon name="arrow-forward"></ion-icon></ion-button> 
+          </ion-buttons>
+        </ion-item>
+      </ion-list>
+</ion-content>
+<ion-footer no-shadow>
+    <ion-toolbar position="bottom">
+        <ion-tabs>
+            <ion-tab-bar >
+              <ion-tab-button tab="tab1">
+                <ion-icon name="home"></ion-icon>
+                
+              </ion-tab-button>
+              <ion-tab-button tab="tab2">
+                <ion-icon name="contact"></ion-icon>
+                
+              </ion-tab-button>
+              <ion-tab-button tab="./login">
+                  <ion-icon name="power"></ion-icon>
+                 
+                </ion-tab-button>
+            </ion-tab-bar>
+          </ion-tabs>
+    </ion-toolbar>
+  </ion-footer>
