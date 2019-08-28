@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -15,6 +16,6 @@ export class LoginPage implements OnInit {
     this.router.navigate(['/register']);  // define your component where you want to go
 }
   gotoSignin(){
-  this.router.navigate(['/dashboard']);  // define your component where you want to go
+  this.router.navigate(['/tabs']);  // define your component where you want to go
 }
 }

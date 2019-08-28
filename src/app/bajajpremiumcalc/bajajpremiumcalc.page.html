@@ -1,0 +1,199 @@
+<ion-header>
+    <ion-toolbar color="primary">
+     
+        <!-- <ion-buttons slot="start">
+            <ion-back-button defaultHref="login"></ion-back-button>
+          </ion-buttons>
+           <ion-button>
+                <ion-icon slot="icon-only" name="star"></ion-icon>
+              </ion-button> -->
+    
+              <ion-buttons slot="secondary">
+                  <ion-button>
+                      <ion-back-button defaultHref="bajaj"></ion-back-button>
+                  </ion-button>
+                </ion-buttons>
+        
+                <ion-title>Bajaj</ion-title>
+        
+                <ion-buttons slot="primary">
+                  <ion-button (click)="gotoHome()">
+                    <ion-icon slot="icon-only" name="home"></ion-icon>
+                  </ion-button>
+                  
+                </ion-buttons>
+      </ion-toolbar>
+  </ion-header>
+
+<ion-content center text-center forceOverscroll="false">
+
+    <ion-list >
+        <ion-card>
+            <ion-card-header>
+                <ion-card-title style="font-size: 14px">
+                 
+                    <img src="assets/icon/bajaj_1.png">
+                    Health Ensure Individual
+                </ion-card-title>
+                <ion-card-subtitle style="padding-top: 20px">Premium Details :</ion-card-subtitle>
+                
+            </ion-card-header>
+       
+            <ion-card-content>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col style="background-color:darkkhaki;font: outline;">
+                          <div>[A] Basic Premium</div>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+                <ion-grid>
+                    <ion-row>
+                      <ion-col>
+                        <div  style="text-align: left">Primary Member</div>
+                      </ion-col>
+                      <ion-col>
+                        <div style="text-align: right">1995</div>
+                      </ion-col>
+                    </ion-row>
+                </ion-grid>
+                <ion-grid>
+                    <ion-row>
+                      <ion-col>
+                        <div style="text-align: left">Second Member</div>
+                      </ion-col>
+                      <ion-col>
+                        <div style="text-align: right">5425</div>
+                      </ion-col>
+                    </ion-row>
+                </ion-grid>
+                <ion-grid>
+                    <ion-row>
+                      <ion-col>
+                        <div style="text-align: left">Third Member</div>
+                      </ion-col>
+                      <ion-col>
+                        <div style="text-align: right">5410</div>
+                      </ion-col>
+                    </ion-row>
+                </ion-grid>
+                <ion-grid>
+                    <ion-row>
+                      <ion-col>
+                        <div style="text-align: left">Fourth Member</div>
+                      </ion-col>
+                      <ion-col>
+                        <div style="text-align: right">0</div>
+                      </ion-col>
+                    </ion-row>
+                </ion-grid>
+                <ion-grid>
+                    <ion-row>
+                      <ion-col>
+                        <div style="text-align: left;text-decoration-style: solid">Total [A]</div>
+                      </ion-col>
+                      <ion-col>
+                        <div style="text-align: right;text-decoration-style: solid">12830</div>
+                      </ion-col>
+                    </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card>
+      <ion-card>
+        <ion-card-content>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col style="background-color:darkkhaki;font: outline;">
+                          <div>[B]Discount / Loadings</div>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+                <ion-grid>
+                    <ion-row>
+                      <ion-col>
+                        <div style="text-align: left">Discount/ Loading</div>
+                      </ion-col>
+                      <ion-col>
+                        <div style="text-align: right">-170.75</div>
+                      </ion-col>
+                    </ion-row>
+                </ion-grid>
+                <ion-grid>
+                    <ion-row>
+                      <ion-col>
+                        <div style="text-align: left">Total [B]</div>
+                      </ion-col>
+                      <ion-col>
+                        <div style="text-align: right">-170.75</div>
+                      </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-card-content>
+          </ion-card>
+          <ion-card>
+              <ion-card-content>
+                      <ion-grid>
+                          <ion-row>
+                              <ion-col style="background-color:darkkhaki;font: outline;">
+                                <div>[C] Total Premium</div>
+                              </ion-col>
+                          </ion-row>
+                      </ion-grid>
+                      <ion-grid>
+                          <ion-row>
+                            <ion-col>
+                              <div style="text-align: left">Premium Before GST</div>
+                            </ion-col>
+                            <ion-col>
+                              <div style="text-align: right">12659.25</div>
+                            </ion-col>
+                          </ion-row>
+                      </ion-grid>
+                      <ion-grid>
+                          <ion-row>
+                            <ion-col>
+                              <div style="text-align: left">GST @ 18%</div>
+                            </ion-col>
+                            <ion-col>
+                              <div style="text-align: right">2275.665</div>
+                            </ion-col>
+                          </ion-row>
+                      </ion-grid>
+                      <ion-grid>
+                          <ion-row>
+                            <ion-col>
+                              <div style="text-align: left">Final Premium for 1 Year</div>
+                            </ion-col>
+                            <ion-col>
+                              <div style="text-align: right">14937.915</div>
+                            </ion-col>
+                          </ion-row>
+                      </ion-grid>
+                      <ion-grid>
+                          <ion-row>
+                            <ion-col>
+                              <div style="text-align: left">Final Premium for 2 Year</div>
+                            </ion-col>
+                            <ion-col>
+                              <div style="text-align: right">28680.7968</div>
+                            </ion-col>
+                          </ion-row>
+                      </ion-grid>
+                      <ion-grid>
+                          <ion-row>
+                            <ion-col>
+                              <div style="text-align: left">Final Premium for 3 Year</div>
+                            </ion-col>
+                            <ion-col>
+                              <div style="text-align: right">41228.6454</div>
+                            </ion-col>
+                          </ion-row>
+                      </ion-grid>
+                      
+                  </ion-card-content>
+                </ion-card>
+          <ion-button (click)="gotoShare()" color="primary" expand="block" style="padding-top: 10px">Share</ion-button>
+          <ion-button (click)="gotoSave()" color="success" expand="block" style="padding-top: 10px">Save</ion-button>
+     
+    </ion-list>      
+</ion-content>

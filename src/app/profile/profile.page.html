@@ -1,0 +1,99 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content> -->
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>
+        Profile
+      </ion-title>
+      <ion-buttons slot="start">
+        
+          <ion-back-button defaultHref="tabs"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content center text-center forceOverscroll="false">
+      <ion-list lines="full" class="ion-no-margin ion-no-padding">
+          <ion-card>
+              <ion-card-header>
+                  <ion-card-subtitle>Welcome Guest !!!!</ion-card-subtitle>
+              </ion-card-header>
+              <ion-card-content>
+                  <section text-center class="profile-picture" (click)="selectImage()">
+                      <span class="profile-picture__icon">
+                        <ion-icon name="md-create"></ion-icon>
+                      </span>
+                      <img *ngIf="image" [src]="image" class="profile-picture__image" alt="Profile Picture">
+                      <img *ngIf="!image" [src]="'assets/imgs/user-placeholder.svg'" class="profile-picture__image" alt="Profile Picture">
+                    </section>
+          <ion-item style="padding-top: 5px;">
+              <ion-label position="floating">Full Name <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+            </ion-item>
+          
+              <ion-item style="padding-top: 5px;">
+                  <ion-label position="floating">Phone No. <ion-text color="danger">*</ion-text></ion-label>
+                  <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+                </ion-item>
+                <ion-item style="padding-top: 5px;">
+              <ion-label position="floating">Email Id <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+            </ion-item>
+            <ion-item style="padding-top: 5px;">
+                <ion-label position="floating">Password <ion-text color="danger">*</ion-text></ion-label>
+                <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+              </ion-item>
+              <ion-item style="padding-top: 5px;">
+                  <ion-label position="floating">Confirm Password <ion-text color="danger">*</ion-text></ion-label>
+                  <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+                </ion-item>
+                <ion-item style="padding-top: 5px;">
+                    <ion-label position="floating">Pin (4 digit) <ion-text color="danger">*</ion-text></ion-label>
+                    <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required></ion-input>
+                  </ion-item>
+            
+            <ion-button (click)="gotoUpdate()" color="success" expand="block" style="padding-top: 10px">Update</ion-button>
+            <ion-button (click)="gotoCancel()" color="danger" expand="block" style="padding-top: 10px">Cancel</ion-button>
+       
+          </ion-card-content>
+          </ion-card>
+        </ion-list>
+  </ion-content>
+  
+  <!-- <ion-content padding>
+     <form [formGroup]="profileForm" (ngSubmit)="save(profileForm.value)"> 
+      <ion-list margin-bottom padding-bottom>
+        <section text-center class="profile-picture" (click)="selectImage()">
+          <span class="profile-picture__icon">
+            <ion-icon name="md-create"></ion-icon>
+          </span>
+          <img *ngIf="image" [src]="image" class="profile-picture__image" alt="Profile Picture">
+          <img *ngIf="!image" [src]="'assets/imgs/user-placeholder.svg'" class="profile-picture__image" alt="Profile Picture">
+        </section>
+  
+        <ion-item>
+          <ion-label>First name</ion-label>
+          <ion-input type="text" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Last name</ion-label>
+          <ion-input type="text" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Email</ion-label>
+          <ion-input type="text" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Password</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <button ion-button block type="submit">Save</button>
+      </ion-list>
+    </form> 
+  </ion-content> -->

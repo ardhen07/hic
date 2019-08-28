@@ -8,6 +8,12 @@ const routes: Routes = [
   { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardPageModule' },
   { path: 'register', loadChildren: './registration/registration.module#RegistrationPageModule' },
   { path: 'bajaj', loadChildren: './bajaj/bajaj.module#BajajPageModule' },
+  { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
+  { path: 'changepassword', loadChildren: './changepassword/changepassword.module#ChangepasswordPageModule' },
+  { path: 'confirmemail', loadChildren: './confirmemail/confirmemail.module#ConfirmemailPageModule' },
+  { path: 'tabs', loadChildren: './tabs/tabs.module#TabsPageModule' },
+  { path: 'settings', loadChildren: './settings/settings.module#SettingsPageModule' },
+  { path: 'bajajpremiumcalc', loadChildren: './bajajpremiumcalc/bajajpremiumcalc.module#BajajpremiumcalcPageModule' },
 ];
 
 @NgModule({

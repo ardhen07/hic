@@ -1,8 +1,21 @@
 <ion-header>
-    <ion-toolbar>
+      <ion-toolbar color="light">
+        <ion-buttons slot="secondary">
+          <ion-button>
+            <ion-icon slot="icon-only" name="logo-ionic"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+
         <ion-title style="font-size: 15px">Helath Insurance Calculator</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+        <ion-buttons slot="primary">
+          <!-- <ion-button>
+            <ion-icon slot="icon-only" name="star"></ion-icon>
+          </ion-button> -->
+          <ion-button (click)="gotoSignin()" color="primary" >Skip</ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
   
   <ion-content center text-center forceOverscroll="false" >
   
@@ -26,20 +39,44 @@
             
           </ion-slide>
           <ion-slide>
-              <img src="assets/welcome/2.jpg">
+              <ion-card>
+                  <img src="assets/welcome/2.jpg">
+                  <ion-card-content>
+                    <ion-card-title>
+                      Nine Inch Nails Live
+                      </ion-card-title>
+                    <p>
+                      The most popular industrial group ever, and largely
+                      responsible for bringing the music to a mass audience.
+                    </p>
+                  </ion-card-content>
+                </ion-card>
+              
           </ion-slide>
           <ion-slide> 
-             <img src="assets/welcome/3.png">
+              <ion-card>
+                  <img src="assets/welcome/3.png">
+                  <ion-card-content>
+                    <ion-card-title>
+                      Nine Inch Nails Live
+                      </ion-card-title>
+                    <p>
+                      The most popular industrial group ever, and largely
+                      responsible for bringing the music to a mass audience.
+                    </p>
+                  </ion-card-content>
+                </ion-card>
+            
                 
           </ion-slide>
     </ion-slides>
   </ion-content>
-  <ion-footer no-shadow>
+  <!-- <ion-footer no-shadow>
       <ion-toolbar position="bottom">
           <ion-buttons end>
               
-              <ion-button (click)="gotoSignin()" color="primary" >Skip</ion-button>
+              
               
             </ion-buttons>
       </ion-toolbar>
-    </ion-footer>
+    </ion-footer> -->
