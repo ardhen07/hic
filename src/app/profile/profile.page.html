@@ -25,12 +25,15 @@
                   <ion-card-subtitle>Welcome Guest !!!!</ion-card-subtitle>
               </ion-card-header>
               <ion-card-content>
-                  <section text-center class="profile-picture" (click)="selectImage()">
+                  <!-- <section text-center class="profile-picture" (click)="selectImage()"> -->
+                      <section text-center class="profile-picture">
                       <span class="profile-picture__icon">
                         <ion-icon name="md-create"></ion-icon>
                       </span>
-                      <img *ngIf="image" [src]="image" class="profile-picture__image" alt="Profile Picture">
-                      <img *ngIf="!image" [src]="'assets/imgs/user-placeholder.svg'" class="profile-picture__image" alt="Profile Picture">
+                      <!-- <img *ngIf="image" [src]="image" class="profile-picture__image" alt="Profile Picture">
+                      <img *ngIf="!image" [src]="'assets/imgs/user-placeholder.jpg'" class="profile-picture__image" alt="Profile Picture"> -->
+                     
+                      <img  src="assets/imgs/user-placeholder.jpg">
                     </section>
           <ion-item style="padding-top: 5px;">
               <ion-label position="floating">Full Name <ion-text color="danger">*</ion-text></ion-label>

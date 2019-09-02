@@ -15,15 +15,16 @@
         </ion-card-header>
         <ion-card-content>
     <ion-item>
-        <ion-label position="floating">Username</ion-label>
-        <ion-input></ion-input>
+        <ion-label position="floating" clear-input="true">Username</ion-label>
+        <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required type="text" [(ngModel)]="username"></ion-input>
       </ion-item>
       <ion-item>
-          <ion-label position="floating">Password</ion-label>
-          <ion-input></ion-input>
+          <ion-label position="floating" clear-input="true">Password</ion-label>
+          <ion-input autocapitalize="off" autocomplete="off" autocorrect="off" clear-input="true"  required type="password" [(ngModel)]="password"></ion-input>
         </ion-item>
       <ion-button  (click)="gotoSignin()" color="primary" expand="block" style="padding-top: 10px">login</ion-button>
-      <ion-button (click)="gotoSignup()"  color="success" expand="block" style="padding-top: 10px">Signup</ion-button>
+      <ion-button (click)="gotoSignup()"  color="success" expand="block" style="padding-top: 10px">Signup</ion-button><ion-button (click)="openModal()"  color="secondary" expand="block" style="padding-top: 10px">Login with 4 digit PIN</ion-button>
+      <p *ngIf="dataReturned">{{dataReturned}}</p>
       <!-- <ion-item>
           <ion-label position="fixed">Forgot Password ?</ion-label>
          

@@ -1,0 +1,7 @@
+{
+  "appId": "com.gosoftware.hic",
+  "appName": "health-insurace-calculator",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

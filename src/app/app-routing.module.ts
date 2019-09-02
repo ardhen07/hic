@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'tabs', loadChildren: './tabs/tabs.module#TabsPageModule' },
   { path: 'settings', loadChildren: './settings/settings.module#SettingsPageModule' },
   { path: 'bajajpremiumcalc', loadChildren: './bajajpremiumcalc/bajajpremiumcalc.module#BajajpremiumcalcPageModule' },
+  { path: 'pinmodal', loadChildren: './pinmodal/pinmodal.module#PinmodalPageModule' },
 ];
 
 @NgModule({
