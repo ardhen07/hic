@@ -12,6 +12,7 @@ import { PinmodalPageModule } from './pinmodal/pinmodal.module';
 import { AngularFireModule } from '@angular/fire';
 import firebaseConfig from './firebase';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -21,6 +22,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     PinmodalPageModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule,
+    HttpClientModule,
   ],
   providers: [
     StatusBar,

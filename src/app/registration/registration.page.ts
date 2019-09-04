@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoadingController } from '@ionic/angular';
+import { RegisterService } from './register.service';
 @Component({
   selector: 'app-registration',
   templateUrl: './registration.page.html',
@@ -8,7 +9,9 @@ import { LoadingController } from '@ionic/angular';
 })
 export class RegistrationPage implements OnInit {
   loaderToShow: any;
-  constructor(private router: Router,public loadingController: LoadingController) { }
+  constructor(private router: Router,
+    public loadingController: LoadingController,
+    private registerService: RegisterService) { }
 
   ngOnInit() {
   }
@@ -30,6 +33,9 @@ showLoader() {
 
     res.onDidDismiss().then((dis) => {
       console.log('Loading complete..');
+      this.registerService.goto_Save().subscribe((response) => {
+        console.log(response);
+    });
       this.router.navigate(['/login']);
     });
   });
